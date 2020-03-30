@@ -2,17 +2,17 @@ name := "s2utils"
 
 version := "1.1.1"
 
-scalaVersion := "2.11.8"
-crossScalaVersions := Seq("2.11.8", "2.12.4")
+scalaVersion := "2.13.1"
+crossScalaVersions := Seq("2.13.1", "2.11.12", "2.12.10")
 
 // Testing framework
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.+" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % Test
 
 // Geometry objects
 libraryDependencies += "com.vividsolutions" % "jts" % "1.13"
 
 // S2 core library (on maven - fork of original Google lib)
-libraryDependencies += "io.sgr" % "s2-geometry-library-java" % "1.0.0"
+libraryDependencies += "io.sgr" % "s2-geometry-library-java" % "1.0.1"
 
 // Enable sbt-ghpages to create a github site for docs
 enablePlugins(GhpagesPlugin)
